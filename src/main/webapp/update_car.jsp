@@ -4,6 +4,7 @@
 <%@page import="com.jspiders.cardekho_with_servletsandjsp.jdbc.CarJDBC"%>
 <%@page
 	import="com.jspiders.cardekho_with_servletsandjsp.entity.CarEntity"%>
+	<jsp:include page="nav_bar.jsp"></jsp:include>
 <!DOCTYPE html>
 <html>
 <head>

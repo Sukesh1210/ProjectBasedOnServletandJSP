@@ -4,6 +4,7 @@
 <%@page import="com.jspiders.cardekho_with_servletsandjsp.jdbc.CarJDBC"%>
 <%@page
 	import="com.jspiders.cardekho_with_servletsandjsp.entity.CarEntity"%>
+	<jsp:include page="nav_bar.jsp"></jsp:include>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,6 +28,7 @@
 				<th>Brand</th>
 				<th>Price</th>
 				<th>Action1</th>
+				<th>Action2</th>
 			</tr>
 			<%for(CarEntity car:cars){
 				%>
@@ -36,6 +38,7 @@
 				<td><%=car.getBrand() %></td>
 				<td><%=car.getPrice() %></td>
 				<td><a href="edit_car?id=<%=car.getId()%>">update</a></td>
+				<td><a href="delete_car.jsp">delete</a></td>
 			</tr>
 			<% 	
 			}
